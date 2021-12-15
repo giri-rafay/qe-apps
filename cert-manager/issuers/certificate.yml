@@ -1,0 +1,11 @@
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: selfsigned-cert
+  namespace: rafay-cert-manager
+spec:
+  dnsNames:
+    - qe-rafay.com
+  secretName: rafay-selfsigned-tls
+  issuerRef:
+    name: rafay-selfsigned

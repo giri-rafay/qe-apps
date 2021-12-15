@@ -1,0 +1,7 @@
+apiVersion: cert-manager.io/v1
+kind: Issuer
+metadata:
+  name: rafay-selfsigned
+  namespace: rafay-cert-manager
+spec:
+  selfSigned: {}
